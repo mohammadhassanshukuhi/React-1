@@ -47,15 +47,9 @@ function Examples() {
         </TabButton></>
 
   return (
-    <Section id="examples" topContent={tabButtonsJSX}>
+    <Section id="examples" topContent={tabButtonsJSX} contentWrapper="menu">
       {tabContentJSX}
     </Section>
-    // <section id="examples">
-    //   <menu>
-       
-    //   </menu>
-    //   {tabContentJSX}
-    // </section>
   );
 }
 export default Examples;

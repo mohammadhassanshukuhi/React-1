@@ -1,7 +1,10 @@
-function Section({ children, topContent, ...props }) {
+function Section({ children, topContent, contentWrapper = "div", ...props }) {
+
+const TopContentWrapper = contentWrapper
+
   return (
     <section {...props}>
-      <menu>{topContent}</menu>
+      <TopContentWrapper>{topContent}</TopContentWrapper>
       {children}
     </section>
   );
